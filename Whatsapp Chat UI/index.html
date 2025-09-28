@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat UI </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        &gt;>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #ece5dd;
+            text-align: center;
+        }
+
+        .whatsapp {
+            width: 360px;
+            height: 640px;
+            background: #fff;
+            margin: 30px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .header {
+            background: #075e54;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            position: relative;
+        }
+
+        .header h2 {
+            display: inline-block;
+        }
+
+        .icons ⋮ {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-size: 20px;
+        }
+
+        .tabs {
+            background: #075e54;
+            height: 40px;
+        }
+
+        .tab {
+            width: 20%;
+            display: inline-block;
+            text-align: center;
+            color: #b2d8d8;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            color: #fff;
+            border-bottom: 3px solid #fff;
+        }
+
+        .chat-list {
+            height: 500px;
+            overflow-y: auto;
+        }
+
+        .chat {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            height: 70px;
+            position: relative;
+        }
+
+        .chat img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .chat-info {
+            display: inline-block;
+            width: 280px;
+        }
+
+        .chat-info h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .chat-info .time {
+            float: right;
+            font-size: 12px;
+            color: gray;
+        }
+
+        .chat-info p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        footer {
+            background-color: #075e54;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 30px;
+            border-top: 3px solid #25d366;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer strong {
+            color: #25d366;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whatsapp">
+        <div class="header">
+            <h2>WhatsApp</h2>
+            <div class="icons">
+                📸⋮
+            </div>
+        </div>
+        <div style="color: #000;">🔍<input type="text" placeholder="Ask Meta AI or Search"></div>
+        <div class="tabs">
+            <div class="tab">Groups</div>
+            <div class="tab active">Chats</div>
+            <div class="tab">Updates</div>
+            <div class="tab">Calls</div>
+        </div>
+
+        <div class="chat-list">
+            <div class="chat">
+                <div class="chat-info">
+                    <img src="WhatsApp Image 2025-09-28 at 5.08.59 PM.jpeg" alt="Profile">
+                    <h4>Mustafa Akhtar<span class="time">5:10 PM</span></h4>
+                    <p>Assalamualaikum Bhai aaj nikalna hena bata</p>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="chat-info">
+                    <img src="download.png" alt="Profile">
+                    <h4>Hamza<span class="time">2:30 PM</span></h4>
+                    <p>India Vs Pakistan he aaj Bhai</p>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="chat-info">
+                    <img src="WhatsApp Image 2025-08-24 at 10.55.23 PM.jpeg" alt="Profile">
+                    <h4>Ali Aneese<span class="time">8:03 AM</span></h4>
+                    <p>Tonight soon🎮</p>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="chat-info">
+                    <img src="images.png" alt="Profile">
+                    <h4>Web B#18 (Mon & Wed 11am to 01pm)<span class="time">4:54 PM</span></h4>
+                    <p>Hey everyone!👋Hope you’re all doing great</p>
+                </div>
+                <br>
+            </div>
+            <div class="chat">
+                <div class="chat-info">
+                    <img src="images.jfif" alt="Profile">
+                    <h4>Abdul Rehman(Li Cheng Yi)<span class="time">26/09/2025</span></h4>
+                    <p>Abdul Rehman(Li Cheng Yi) reacted 😢 to 📹 Video</p>
+                </div>
+                <br>
+            </div>
+            <div class="chat">
+                <div class="chat-info">
+                    <img src="download.png" alt="Profile">
+                    <h4>Abdul Rehman School<span class="time">6:39 PM</span></h4>
+                    <p>Baat Sun</p>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="chat-info">
+                    <img src="cricket-team-logo-260nw-560777896.webp" alt="Profile">
+                    <h4>Cricket Lovers<span class="time">5:51 PM</span></h4>
+                    <p>kal suhba kitne baje nikalna he</p>
+                </div>
+            </div>
+            <div class="chat">
+                <div class="chat-info">
+                    <img src="download.png" alt="Profile">
+                    <h4>Abu<span class="time">6:45 PM</span></h4>
+                    <p>Beta kahan ho jaldi ghar per aao</p>
+                </div>
+            </div>
+       
+            
+        <footer>
+            <p>📸 Created with ❤️ by <strong>Zohaib</strong> | HTML & CSS Practice Project</p>
+            <p>© 2025 All Rights Reserved</p>
+        </footer>
+         </div>
+
+</body>
+
+</html>
